@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>【プロ会社員】鴨頭嘉人出版記念講演会 in 札幌</title>
+    <meta name='robots' content='noindex, nofollow' />
+    <style>
+        /* 静岡版のスタイルを簡略化 */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F0F5FA;
+            color: #334155;
+        }
+
+        .site-content {
+            max-width: 100%;
+            margin: 0 auto;
+            background: #fff;
+        }
+
+        .entry-content {
+            padding: 0;
+        }
+
+        .pos-rel {
+            position: relative;
+        }
+
+        .fv-ab {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+        }
+
+        .venue-ab,
+        .map-ab {
+            position: absolute;
+            font-size: 14px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        .venue-ab {
+            top: 20px;
+            left: 20px;
+        }
+
+        .map-ab {
+            top: 20px;
+            right: 20px;
+        }
+
+        .venue-ab a,
+        .map-ab a {
+            color: #046bd2;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .animated-fuwafuwa {
+            animation: fuwafuwa 2s ease-in-out infinite;
+        }
+
+        @keyframes fuwafuwa {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .wp-block-image {
+            margin: 0;
+            text-align: center;
+        }
+
+        .wp-block-image img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .aligncenter {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        a {
+            color: #046bd2;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #045cb4;
+        }
+
+        /* Thank you page styles */
+        .thank-you-container {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 40px;
+            text-align: center;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .thank-you-container h1 {
+            color: #046bd2;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .thank-you-container p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .thank-you-container .button {
+            display: inline-block;
+            background: #046bd2;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .thank-you-container .button:hover {
+            background: #045cb4;
+        }
+
+        /* チケットカードスタイル */
+        .ticket-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 25px 20px;
+            margin: 20px auto;
+            max-width: 600px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .ticket-card h3 {
+            color: #333;
+            font-size: 1.2em;
+            margin: 0 0 15px 0;
+            line-height: 1.5;
+        }
+
+        .ticket-card .price {
+            font-size: 1.8em;
+            color: #d32f2f;
+            font-weight: bold;
+            margin: 10px 0 20px 0;
+        }
+
+        .ticket-btn {
+            display: inline-block;
+            background: #d32f2f;
+            color: #fff;
+            padding: 12px 40px;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 5px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .ticket-btn:hover {
+            background: #b71c1c;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(183, 28, 28, 0.4);
+        }
+
+        /* イベント情報セクション（日時・場所・リンク） */
+        .event-info-container {
+            background: #fff;
+            padding: 30px 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border: 2px solid #ce0000;
+        }
+
+        .event-date-row {
+            font-size: 1.5em;
+            color: #333;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .event-time-row {
+            font-size: 2.5em;
+            color: #d32f2f;
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 15px;
+        }
+
+        .event-location-row {
+            font-size: 1.8em;
+            font-weight: bold;
+            margin-bottom: 20px;
+            border-top: 1px dashed #ccc;
+            padding-top: 15px;
+        }
+
+        .venue-links {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-link {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #f5f5f5;
+            color: #333;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            border: 2px solid #ddd;
+            transition: all 0.3s;
+        }
+
+        .btn-link:hover {
+            background: #ce0000;
+            color: #fff;
+            border-color: #ce0000;
+        }
+
+        .btn-link.map-btn {
+            background: #e3f2fd;
+            border-color: #2196f3;
+            color: #0d47a1;
+        }
+
+        .btn-link.map-btn:hover {
+            background: #2196f3;
+            color: #fff;
+        }
+
+
+        /* 特別なカードスタイル */
+        .vip-card {
+            border: 2px solid #ffc107;
+            background: #fffdeb;
+        }
+
+        .sponsor-card {
+            border: 2px solid #2196f3;
+            background: #e3f2fd;
+        }
+
+        .special-card {
+            border: 2px solid #9c27b0;
+            background: #f3e5f5;
+        }
+    </style>
+</head>
+
+<body class="page">
+
+    <div id="content" class="site-content">
+        <div class="ast-container">
+            <div id="primary" class="content-area primary">
+                <main id="main" class="site-main">
+                    <article class="page">
+                        <div class="entry-content">
+
+                            <!-- メインビジュアル -->
+                            <div class="pos-rel">
+                                <figure class="wp-block-image aligncenter main-visual-container">
+                                    <img src="kamogashira_sapporo_main_v11.png" alt="鴨頭嘉人全国講演会in札幌 メインビジュアル" />
+                                </figure>
+
+                                <div class="fv-ab">
+                                    <figure class="wp-block-image aligncenter animated-fuwafuwa">
+                                        <a href="#ticket">
+                                            <img src="https://kamo0209.cross-education.com/wp-content/uploads/2025/12/CTA.png"
+                                                alt="今すぐ申し込み" style="width:300px" />
+                                        </a>
+                                    </figure>
+                                </div>
+                            </div>
+
+                            <!-- 日時・場所・リンク（デザイン刷新） -->
+                            <div class="event-info-container">
+                                <div class="event-date-row">2026年3月20日(金・祝)</div>
+                                <div class="event-time-row">18:00 開演</div>
+                                <div class="event-location-row">
+                                    ホテルモントレ エーデルホフ札幌
+                                </div>
+                                <div class="venue-links">
+                                    <a href="https://www.hotelmonterey.co.jp/edelhof/" target="_blank"
+                                        rel="noreferrer noopener" class="btn-link">
+                                        🏨 会場ホームページ
+                                    </a>
+                                    <a href="https://www.google.com/maps/search/?api=1&query=ホテルモントレエーデルホフ札幌"
+                                        target="_blank" rel="noreferrer noopener" class="btn-link map-btn">
+                                        📍 Googleマップで見る
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- 講師紹介 -->
+                            <figure class="wp-block-image aligncenter">
+                                <img src="https://kamo0209.cross-education.com/wp-content/uploads/2025/12/c-scaled.png"
+                                    alt="鴨頭嘉人プロフィール" />
+                            </figure>
+
+                            <figure class="wp-block-image aligncenter">
+                                <img src="https://kamo0209.cross-education.com/wp-content/uploads/2025/12/d2.png"
+                                    alt="" />
+                            </figure>
+
+                            <figure class="wp-block-image aligncenter">
+                                <img src="https://kamo0209.cross-education.com/wp-content/uploads/2025/12/e.png"
+                                    alt="" />
+                            </figure>
+
+                            <!-- CTA -->
+                            <figure class="wp-block-image aligncenter animated-fuwafuwa">
+                                <a href="#ticket">
+                                    <img src="https://kamo0209.cross-education.com/wp-content/uploads/2025/12/CTA.png"
+                                        alt="今すぐ申し込み" style="width:300px" />
+                                </a>
+                            </figure>
+
+                            <!-- お客様の声 -->
+                            <figure class="wp-block-image voice-img-container">
+                                <img src="https://kamo0209.cross-education.com/wp-content/uploads/2025/12/voice-ttl.jpeg"
+                                    alt="参加者の声" />
+                            </figure>
+
+                            <figure class="wp-block-image voice-img-container">
+                                <img src="https://kamo0209.cross-education.com/wp-content/uploads/2025/12/voice-1.jpeg"
+                                    alt="お客様の声1" />
+                            </figure>
+
+                            <figure class="wp-block-image voice-img-container">
+                                <img src="https://kamo0209.cross-education.com/wp-content/uploads/2025/12/voice-2-scaled.jpeg"
+                                    alt="お客様の声2" />
+                            </figure>
+
+                            <figure class="wp-block-image voice-img-container">
+                                <img src="https://kamo0209.cross-education.com/wp-content/uploads/2025/12/voice-3.jpeg"
+                                    alt="お客様の声3" />
+                            </figure>
+
+                            <figure class="wp-block-image voice-img-container">
+                                <img src="https://kamo0209.cross-education.com/wp-content/uploads/2025/12/voice-4.jpeg"
+                                    alt="お客様の声4" />
+                            </figure>
+
+                            <figure class="wp-block-image voice-img-container">
+                                <img src="https://kamo0209.cross-education.com/wp-content/uploads/2025/12/voice-5.jpeg"
+                                    alt="お客様の声5" />
+                            </figure>
+
+                            <figure class="wp-block-image voice-img-container">
+                                <img src="https://kamo0209.cross-education.com/wp-content/uploads/2025/12/voice-6.jpeg"
+                                    alt="お客様の声6" />
+                            </figure>
+
+                            <figure class="wp-block-image voice-img-container">
+                                <img src="https://kamo0209.cross-education.com/wp-content/uploads/2025/12/voice-7.jpeg"
+                                    alt="お客様の声7" />
+                            </figure>
+
+                            <!-- チケット一覧 -->
+                            <div id="ticket" style="padding: 40px 20px; background: #f9f9f9;">
+                                <h2 style="text-align: center; font-size: 2em; color: #046bd2; margin-bottom: 30px;">
+                                    チケット一覧</h2>
+
+                                <!-- ボランティアスタッフ -->
+                                <div class="ticket-card">
+                                    <h3>ボランティアスタッフ ※書籍5冊付き</h3>
+                                    <p class="price">¥15,000</p>
+                                    <a href="thank_you.html" class="ticket-btn">申し込む</a>
+                                </div>
+
+                                <!-- A席関連 -->
+                                <div class="ticket-card">
+                                    <h3>A席（A席エリア内自由席） ※書籍はつきません</h3>
+                                    <p class="price">¥4,000</p>
+                                    <a href="thank_you.html" class="ticket-btn">申し込む</a>
+                                </div>
+
+                                <div class="ticket-card">
+                                    <h3>【A席 ペア割引】1～2名まで（A席エリア内自由席） ※書籍はつきません</h3>
+                                    <p class="price">¥7,000</p>
+                                    <a href="thank_you.html" class="ticket-btn">申し込む</a>
+                                </div>
+
+                                <div class="ticket-card">
+                                    <h3>【A席 団体割引】1～5名まで（A席エリア内自由席） ※書籍はつきません</h3>
+                                    <p class="price">¥15,000</p>
+                                    <a href="thank_you.html" class="ticket-btn">申し込む</a>
+                                </div>
+
+                                <!-- S席関連 -->
+                                <div class="ticket-card">
+                                    <h3>S席（2～5列S席エリア内自由席） ※書籍はつきません</h3>
+                                    <p class="price">¥6,000</p>
+                                    <a href="thank_you.html" class="ticket-btn">申し込む</a>
+                                </div>
+
+                                <div class="ticket-card">
+                                    <h3>【S席 ペア割引】1～2名まで（2～5列S席エリア内自由席） ※書籍はつきません</h3>
+                                    <p class="price">¥11,000</p>
+                                    <a href="thank_you.html" class="ticket-btn">申し込む</a>
+                                </div>
+
+                                <div class="ticket-card">
+                                    <h3>【S席 団体割引】1～5名まで（2～5列S席エリア内自由席） ※書籍はつきません</h3>
+                                    <p class="price">¥25,000</p>
+                                    <a href="thank_you.html" class="ticket-btn">申し込む</a>
+                                </div>
+
+                                <!-- VIP・スポンサー -->
+                                <div class="ticket-card vip-card">
+                                    <h3>VIP席（1～2列VIPエリア内自由席）<br>※書籍5冊付き+講演終了後、2ショット撮影</h3>
+                                    <p class="price">¥20,000</p>
+                                    <a href="thank_you.html" class="ticket-btn">申し込む</a>
+                                </div>
+
+                                <div class="ticket-card sponsor-card">
+                                    <h3>スポンサー席（最前列中央エリア内自由席）<br>※書籍40冊郵送+講演終了後ミーグリ10分</h3>
+                                    <p class="price">¥100,000</p>
+                                    <a href="thank_you.html" class="ticket-btn">申し込む</a>
+                                </div>
+
+                                <!-- 書籍・特典系 -->
+                                <div class="ticket-card">
+                                    <h3>【書籍/プロ会社員】1冊</h3>
+                                    <p class="price">¥2,000</p>
+                                    <a href="thank_you.html" class="ticket-btn">申し込む</a>
+                                </div>
+
+                                <div class="ticket-card">
+                                    <h3>【書籍/プロ会社員】5冊<br>※サイン色紙1枚＋講演終了後、2ショット撮影</h3>
+                                    <p class="price">¥10,000</p>
+                                    <a href="thank_you.html" class="ticket-btn">申し込む</a>
+                                </div>
+
+                                <div class="ticket-card">
+                                    <h3>【書籍/プロ会社員】Voicyで鴨さんが名前を読み上げる権<br>※書籍15冊郵送</h3>
+                                    <p class="price">¥30,000</p>
+                                    <a href="thank_you.html" class="ticket-btn">申し込む</a>
+                                </div>
+
+                                <div class="ticket-card special-card">
+                                    <h3>【書籍/プロ会社員】鴨頭に『ビジネスモデルコンサル』55分してもらえる権利（Zoom or 池袋対面）<br>※書籍40冊</h3>
+                                    <p class="price">¥200,000</p>
+                                    <a href="thank_you.html" class="ticket-btn">申し込む</a>
+                                </div>
+
+                                <div class="ticket-card special-card">
+                                    <h3>【書籍/プロ会社員】鴨頭嘉人があなたのチャンネルでYoutube対談権（30分）<br>※書籍40冊</h3>
+                                    <p class="price">¥500,000</p>
+                                    <a href="thank_you.html" class="ticket-btn">申し込む</a>
+                                </div>
+
+                                <div class="ticket-card special-card">
+                                    <h3>【書籍/プロ会社員】鴨頭嘉人のビジネスチャンネルでYoutube対談権（30分）<br>※書籍40冊</h3>
+                                    <p class="price">¥1,000,000</p>
+                                    <a href="thank_you.html" class="ticket-btn">申し込む</a>
+                                </div>
+                            </div>
+
+                        </div><!-- .entry-content -->
+                    </article>
+                </main>
+            </div><!-- #primary -->
+        </div><!-- .ast-container -->
+    </div><!-- #content -->
+
+    <footer style="background: #333; color: #fff; text-align: center; padding: 20px; margin-top: 40px;">
+        © 2026 鴨頭嘉人 全国講演会 in 札幌 事務局
+    </footer>
+
+</body>
+
+</html>
