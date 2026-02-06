@@ -350,58 +350,131 @@
                                 </div>
                             </div>
 
-                            <!-- 講師紹介 & オススメ -->
-                            <div style="max-width: 800px; margin: 60px auto; padding: 0 20px;">
-                                <h3
-                                    style="text-align: center; color: #046bd2; border-bottom: 2px solid #046bd2; padding-bottom: 10px; margin-bottom: 40px; font-size: 1.8em;">
-                                    講師プロフィール
-                                </h3>
+                            <!-- 講師紹介 & オススメ & 講演内容 -->
+                            <!-- 札幌オリジナルコンテンツエリア -->
+                            <div class="sapporo-content-area" style="margin: 60px 0;">
 
-                                <!-- こんな方にオススメ -->
-                                <div style="margin-bottom: 50px;">
-                                    <div
-                                        style="background: linear-gradient(90deg, #d32f2f, #f44336); color: #fff; text-align: center; font-weight: bold; font-size: 1.4em; padding: 15px; border-radius: 50px; position: relative; margin-bottom: 30px; box-shadow: 0 4px 10px rgba(211, 47, 47, 0.3);">
+                                <!-- こんな方にオススメ (Sapporo Style: Dark & Fire) -->
+                                <div class="recommended-section"
+                                    style="background: #111; padding: 40px 20px; border-radius: 12px; max-width: 800px; margin: 0 auto 50px auto; color: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.3); border: 2px solid #d32f2f;">
+                                    <h3
+                                        style="text-align: center; color: #ffeb3b; font-size: 2em; margin-bottom: 30px; text-shadow: 0 0 10px rgba(255, 193, 7, 0.5); border-bottom: 3px solid #d32f2f; display: inline-block; padding-bottom: 10px;">
                                         こんな方にオススメ
-                                        <div
-                                            style="position: absolute; bottom: -10px; left: 50%; transform: translateX(-50%); width: 0; height: 0; border-left: 15px solid transparent; border-right: 15px solid transparent; border-top: 15px solid #d32f2f;">
-                                        </div>
-                                    </div>
-                                    <div
-                                        style="background: #fff; border: 2px solid #ddd; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
-                                        <ul
-                                            style="list-style: none; padding: 0; margin: 0; font-size: 1.2em; font-weight: bold; line-height: 1.8;">
-                                            <li style="display: flex; align-items: flex-start; margin-bottom: 10px;">
-                                                <span
-                                                    style="display: inline-block; width: 24px; height: 24px; background: #ce0000; color: #fff; border-radius: 50%; text-align: center; line-height: 24px; margin-right: 10px; flex-shrink: 0; font-size: 0.8em;">✓</span>
-                                                マインドとスキルを身につけたいすべてのビジネスパーソン
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    </h3>
+                                    <ul
+                                        style="list-style: none; padding: 0; margin: 0; font-size: 1.1em; line-height: 1.8;">
+                                        <li style="margin-bottom: 15px; display: flex;"><span
+                                                style="color: #d32f2f; margin-right: 10px; font-weight: bold;">☑</span>
+                                            今の働き方に限界を感じ、「もっと成長したい」と思っている会社員の方</li>
+                                        <li style="margin-bottom: 15px; display: flex;"><span
+                                                style="color: #d32f2f; margin-right: 10px; font-weight: bold;">☑</span>
+                                            給料や評価に不満を抱きながらも現状を変えたい会社員の方</li>
+                                        <li style="margin-bottom: 15px; display: flex;"><span
+                                                style="color: #d32f2f; margin-right: 10px; font-weight: bold;">☑</span>
+                                            部下をどう育て、組織をまとめればいいか悩んでいる管理職の方</li>
+                                        <li style="margin-bottom: 15px; display: flex;"><span
+                                                style="color: #d32f2f; margin-right: 10px; font-weight: bold;">☑</span>
+                                            人材不足・離職率の高さに頭を抱えている経営者やリーダーの方</li>
+                                        <li style="margin-bottom: 15px; display: flex;"><span
+                                                style="color: #d32f2f; margin-right: 10px; font-weight: bold;">☑</span>
+                                            チームのモチベーションを高め、成果につなげたいと願う管理職の方</li>
+                                        <li style="margin-bottom: 15px; display: flex;"><span
+                                                style="color: #d32f2f; margin-right: 10px; font-weight: bold;">☑</span>
+                                            経営者として、社員が主体的に動き業績を伸ばす組織をつくりたい方</li>
+                                        <li style="margin-bottom: 15px; display: flex;"><span
+                                                style="color: #d32f2f; margin-right: 10px; font-weight: bold;">☑</span>
+                                            自社の価値をもっと上げたいと思っている経営者の方</li>
+                                        <li style="margin-bottom: 15px; display: flex;"><span
+                                                style="color: #d32f2f; margin-right: 10px; font-weight: bold;">☑</span>
+                                            時代の変化に負けない柔軟な思考を身に付けたい方</li>
+                                        <li style="margin-bottom: 15px; display: flex;"><span
+                                                style="color: #d32f2f; margin-right: 10px; font-weight: bold;">☑</span>
+                                            これからの時代に必要な“プロ会社員”のマインドとスキルを身につけたい全てのビジネスパーソン</li>
+                                    </ul>
                                 </div>
 
-                                <!-- プロフィール本文 -->
-                                <figure class="wp-block-image aligncenter" style="margin-bottom: 30px;">
-                                    <img src="https://kamo0209.cross-education.com/wp-content/uploads/2025/12/c-scaled.png"
-                                        alt="鴨頭嘉人プロフィール" style="max-width: 100%; border-radius: 8px;" />
-                                </figure>
-                                <div style="line-height: 1.8; color: #333;">
-                                    <h4
-                                        style="font-size: 1.4em; margin-bottom: 15px; border-left: 5px solid #046bd2; padding-left: 15px;">
-                                        鴨頭 嘉人（かもがしら よしひと）</h4>
-                                    <p style="margin-bottom: 20px; font-weight: bold;">株式会社東京カモガシラランド　代表取締役社長</p>
-                                    <p style="margin-bottom: 20px;">
-                                        日本マクドナルドでのキャリアを経て、2010年に独立し、株式会社東京カモガシラランドを設立。全国3300店舗中で「顧客満足度」「従業員満足度」「セールス伸び率」の三冠を達成した実績を基に、組織マネジメントや人材育成に特化した講演活動を全国で展開。これまでに3000回以上の講演を行い、累計30万人以上を動員している。
+                                <!-- 講演内容 (Sapporo Style: Passionate Red) -->
+                                <div class="seminar-content-section"
+                                    style="max-width: 800px; margin: 0 auto 50px auto; padding: 0 20px;">
+                                    <h3
+                                        style="text-align: center; color: #ce0000; font-size: 2em; margin-bottom: 40px; font-weight: 900;">
+                                        講演内容
+                                        <span
+                                            style="display: block; width: 60px; height: 4px; background: #ce0000; margin: 10px auto;"></span>
+                                    </h3>
+
+                                    <div
+                                        style="background: #fff; padding: 20px; border-left: 5px solid #333; margin-bottom: 40px; font-weight: bold; color: #333;">
+                                        <p style="margin: 0 0 10px 0;">🎤 普通の会社員から「プロ会社員」へアップデートする方法</p>
+                                        <p style="margin: 0 0 10px 0;">🎤 赤字社員から黒字社員へ変わる視点</p>
+                                        <p style="margin: 0;">🎤 部下を育て、チームを成長させる承認の力</p>
+                                        <p style="margin-top: 15px; font-weight: normal;">といった、ビジネスの根本的な考え方から、</p>
+                                    </div>
+
+                                    <!-- Strategy 1 -->
+                                    <div
+                                        style="background: linear-gradient(135deg, #d32f2f, #b71c1c); color: #fff; padding: 25px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(211, 47, 47, 0.2);">
+                                        <h4
+                                            style="font-size: 1.3em; margin: 0 0 10px 0; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 10px;">
+                                            プロ会社員になるための具体的な戦略</h4>
+                                        <p style="margin: 0; font-size: 0.95em;">
+                                            自分の給料に見合う以上の成果を出すために、何をどう考え、どんな行動をすればよいのかを明確に解説します。</p>
+                                    </div>
+
+                                    <!-- Strategy 2 -->
+                                    <div
+                                        style="background: linear-gradient(135deg, #d32f2f, #b71c1c); color: #fff; padding: 25px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 4px 10px rgba(211, 47, 47, 0.2);">
+                                        <h4
+                                            style="font-size: 1.3em; margin: 0 0 10px 0; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 10px;">
+                                            会社に依存しない働き方の実践方法</h4>
+                                        <p style="margin: 0; font-size: 0.95em;">
+                                            「どうせ会社員だから…」という思い込みを壊し、自立した働き方を身につけ、プロとしての誇りを持つための行動プランを共有します。</p>
+                                    </div>
+
+                                    <!-- Strategy 3 -->
+                                    <div
+                                        style="background: linear-gradient(135deg, #d32f2f, #b71c1c); color: #fff; padding: 25px; border-radius: 8px; margin-bottom: 30px; box-shadow: 0 4px 10px rgba(211, 47, 47, 0.2);">
+                                        <h4
+                                            style="font-size: 1.3em; margin: 0 0 10px 0; border-bottom: 1px solid rgba(255,255,255,0.3); padding-bottom: 10px;">
+                                            承認力でチームを成長させる秘訣</h4>
+                                        <p style="margin: 0; font-size: 0.95em;">
+                                            部下や仲間の心のエネルギーを高め、組織全体の成果を劇的に伸ばす承認の技術を徹底解説。</p>
+                                    </div>
+
+                                    <p style="text-align: center; font-size: 1.2em; font-weight: bold; color: #333;">
+                                        この講演を通して、あなたは「私は会社員です」ではなく<br>
+                                        <span
+                                            style="background: linear-gradient(transparent 60%, #ffeb3b 60%);">「私はプロ会社員です」と胸を張って名乗れるようになります。</span>
                                     </p>
-                                    <p style="margin-bottom: 20px;">
-                                        経営者としても多方面で成功を収め、高級焼肉店「YAKINIKUMAFIA
-                                        IKEBUKURO」を1店舗、神戸牛鉄板焼専門店「和牛の刀」を2店舗運営。特にインバウンド市場を意識した高級食文化ブランドの構築により、日本の食文化を国内外に発信する活動を行っている。<br>
-                                        2025年1月1日には、速読スクール「ビジネス脳トレ速読」を立ち上げ、ビジネスパーソンを対象に速読を通じて思考力や判断力を高める革新的な教育プログラムを展開予定。自己啓発とスキル向上を目指す学びの場として注目を集めている。
-                                    </p>
-                                    <p style="margin-bottom: 20px;">
-                                        著者としても精力的に活動し、リーダーや経営者に向けた実践的な内容をテーマに24冊（海外2冊含む）の書籍を出版。その知見と経験は、多くの読者に指針とインスピレーションを与えている。<br>
-                                        さらに、会員数1800名を超えるオンラインサロン「鴨Biz」を運営し、経営者やリーダーたちに向けた実践的な情報と学びを提供している。<br>
-                                        YouTubeでは登録者数100万人超え、総再生回数3億回以上という圧倒的な影響力を持ち、SNSフォロワー数は250万人以上。講演、書籍、オンラインサロン、事業運営を通じて、挑戦する力と可能性を多くの人々に届ける自己啓発業界のリーダーとして活躍している。
-                                    </p>
+                                </div>
+
+                                <!-- 講師プロフィール -->
+                                <div style="max-width: 800px; margin: 0 auto; padding: 20px;">
+                                    <h3
+                                        style="text-align: center; color: #046bd2; border-bottom: 2px solid #046bd2; padding-bottom: 10px; margin-bottom: 30px; font-size: 1.8em;">
+                                        講師プロフィール
+                                    </h3>
+                                    <figure class="wp-block-image aligncenter">
+                                        <img src="https://kamo0209.cross-education.com/wp-content/uploads/2025/12/c-scaled.png"
+                                            alt="鴨頭嘉人プロフィール" style="max-width: 100%; border-radius: 8px;" />
+                                    </figure>
+                                    <div style="margin-top: 30px; line-height: 1.8; color: #333;">
+                                        <h4 style="font-size: 1.4em; margin-bottom: 15px;">鴨頭 嘉人（かもがしら よしひと）</h4>
+                                        <p style="margin-bottom: 20px;">株式会社東京カモガシラランド　代表取締役社長</p>
+                                        <p style="margin-bottom: 20px;">
+                                            日本マクドナルドでのキャリアを経て、2010年に独立し、株式会社東京カモガシラランドを設立。全国3300店舗中で「顧客満足度」「従業員満足度」「セールス伸び率」の三冠を達成した実績を基に、組織マネジメントや人材育成に特化した講演活動を全国で展開。これまでに3000回以上の講演を行い、累計30万人以上を動員している。
+                                        </p>
+                                        <p style="margin-bottom: 20px;">
+                                            経営者としても多方面で成功を収め、高級焼肉店「YAKINIKUMAFIA
+                                            IKEBUKURO」を1店舗、神戸牛鉄板焼専門店「和牛の刀」を2店舗運営。特にインバウンド市場を意識した高級食文化ブランドの構築により、日本の食文化を国内外に発信する活動を行っている。<br>
+                                            2025年1月1日には、速読スクール「ビジネス脳トレ速読」を立ち上げ、ビジネスパーソンを対象に速読を通じて思考力や判断力を高める革新的な教育プログラムを展開予定。自己啓発とスキル向上を目指す学びの場として注目を集めている。
+                                        </p>
+                                        <p style="margin-bottom: 20px;">
+                                            著者としても精力的に活動し、リーダーや経営者に向けた実践的な内容をテーマに24冊（海外2冊含む）の書籍を出版。その知見と経験は、多くの読者に指針とインスピレーションを与えている。<br>
+                                            さらに、会員数1800名を超えるオンラインサロン「鴨Biz」を運営し、経営者やリーダーたちに向けた実践的な情報と学びを提供している。<br>
+                                            YouTubeでは登録者数100万人超え、総再生回数3億回以上という圧倒的な影響力を持ち、SNSフォロワー数は250万人以上。講演、書籍、オンラインサロン、事業運営を通じて、挑戦する力と可能性を多くの人々に届ける自己啓発業界のリーダーとして活躍している。
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
 
