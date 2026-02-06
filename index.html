@@ -276,6 +276,29 @@
             border: 2px solid #9c27b0;
             background: #f3e5f5;
         }
+
+        /* スマホ用調整 */
+        @media screen and (max-width: 768px) {
+            .fv-ab {
+                bottom: 15px;
+                /* スマホではより下に配置 */
+                width: 90%;
+                /* 幅を広げて中央配置を安定させる */
+            }
+
+            .fv-ab img {
+                width: 80% !important;
+                /* 画像サイズを少し抑える */
+                max-width: 280px;
+            }
+
+            /* 日付文字が被らないように微調整 */
+            .main-visual-container img {
+                min-height: 250px;
+                object-fit: cover;
+                /* スマホで画像が見切れないように調整（必要なら） */
+            }
+        }
     </style>
 </head>
 
